@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anton Yderberg, DnD player</title>
 </head>
-<body>
+
+<body id="gridContainer">
     <nav>
+        <!-- two lists withing one list, one for my dungeon master stuff, one for my player stuff -->
         <ul>
-            <li>
-                 DungeonMaster
-            </li>
-            
-            <li>
-                Player
-            </li>
-
-            <li>
-                Charachters: DnD
+            <li id="DmNav">
+                DungeonMaster
+                <ul>
+                    <li>
+                        Games
+                    </li>
+                </ul>
             </li>
 
-            <li>
-                Charachters: Other
+            <li id="playerNav">
+                <a href="#">Player</a>
+                <ul>
+                    <li class="hasADropdown">
+                        <a href="#">Charachters: DnD</a>
+                        <ul class="dropDown">
+                            <li><a href="#">Rún</a></li>
+                            <li><a href="#">Aias</a></li>
+                            <li><a href="#">Alie</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="hasADropdown">
+                        Charachters: Other
+                        <ul class="dropDown">
+                            <li><a href="#">Sean</a></li>
+                            <li><a href="#">"Bob"</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </li>
         </ul>
     </nav>
     <header></header>
 </body>
+
 </html>

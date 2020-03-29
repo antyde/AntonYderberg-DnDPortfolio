@@ -4,37 +4,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/Styling.css">
     <title>Anton Yderberg, DnD player</title>
 </head>
 
 <body id="gridContainer">
+    <header>
+        <div>Anton Yderberg</div>
+        <div>TRPG PORTFOLIO</div>
+    </header>
     <nav>
         <!-- two lists withing one list, one for my dungeon master stuff, one for my player stuff -->
-        <ul>
+        <ul id="navbar">
+            <!-- Things that have to to do with me leading (Campaigns and expierience) -->
             <li id="DmNav">
                 DungeonMaster
                 <ul>
-                    <li>
+                    <li class="nav-item">
                         Games
                     </li>
+                    <li class="nav-item">Campaigns</li>
                 </ul>
             </li>
 
+            <!-- things that have to do with me playing (charachters and experience) -->
             <li id="playerNav">
                 <a href="#">Player</a>
                 <ul>
-                    <li class="hasADropdown">
+                    <li class="has-dropdown">
                         <a href="#">Charachters: DnD</a>
-                        <ul class="dropDown">
+                        <ul class="dropdown">
                             <li><a href="#">Rún</a></li>
                             <li><a href="#">Aias</a></li>
                             <li><a href="#">Alie</a></li>
                         </ul>
                     </li>
 
-                    <li class="hasADropdown">
-                        Charachters: Other
-                        <ul class="dropDown">
+                    <li class="has-dropdown  nav-item">
+                        <a href="#">Charachters: Other</a>
+                        <ul class="dropdown">
                             <li><a href="#">Sean</a></li>
                             <li><a href="#">"Bob"</a></li>
                         </ul>
@@ -43,7 +51,8 @@
             </li>
         </ul>
     </nav>
-    <header></header>
+
+
 </body>
 
 </html>

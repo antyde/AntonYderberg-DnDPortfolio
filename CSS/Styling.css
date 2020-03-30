@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -16,9 +20,6 @@ a {
 nav {
   height: 50px;
   width: 100%;
-  background-color: black;
-
-  color: brown;
 }
 
 ul {
@@ -54,4 +55,16 @@ ul {
 .has-dropdown:focus-within .dropdown {
   opacity: 1;
   pointer-events: auto;
+}
+
+#DmNav {
+  background-color: purple;
+  color: white;
+  width: 100%;
+}
+
+#playernav {
+  background-color: orange;
+  color: black;
+  width: 100%;
 }

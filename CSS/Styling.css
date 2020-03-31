@@ -13,9 +13,6 @@ ul {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
 
 nav {
   height: 50px;
@@ -67,4 +64,27 @@ ul {
   background-color: orange;
   color: black;
   width: 100%;
+}
+
+.dm-side {
+  background-color: purple;
+  color: white;  
+  width: 50%;
+}
+
+.player-side {
+  background-color: orange;
+  color: black;
+  width: 50%;
+  float: right;
+}
+
+.right-side-link  {
+  text-decoration: none;
+  color: black;
+}
+
+.left-side-link{
+  text-decoration: none;
+  color: white;
 }

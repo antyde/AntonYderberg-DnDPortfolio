@@ -2,13 +2,11 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
 }
 
 header {
   grid-row: 1;
-  grid-column: 1/3;
 }
 
 header a {
@@ -22,7 +20,6 @@ ul {
 }
 
 nav {
-  grid-column: 1/3;
   height: 3rem;
   width: 100%;
 }
@@ -75,17 +72,16 @@ ul {
 }
 
 /* General color scheme for the two sides */
-.dm-side {
+/*.dm-side {
   background-color: purple;
   color: white;
   grid-column: 1;
-}
+} */
 
 .player-side {
   background-color: orange;
   color: black;
-  float: right;
-  grid-column: 2;
+
 }
 
 .player-side-link {
@@ -98,9 +94,14 @@ ul {
   color: white;
 }
 
+.spliting-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* Cards */
 
-#bob-card {
+.card {
   position: relative;
   border: 1px solid #e0dcdc;
   padding: 15px 15px 35px;
@@ -113,6 +114,25 @@ ul {
 
 #bob-background {
   background-image: url(/content/Bob.png);
+}
+
+#bob-card{
+
+}
+
+#rún-background {
+  background-image: url(/content/Rún.jpg);
+}
+
+#aias-background {
+  background-image: url(/content/Aias.jpg);
+}
+
+#george-background{
+  background-image: url(/content/George.png);
+}
+
+.card-background {
   background-repeat: no-repeat;
   background-position: top right;
   width: 100%;
@@ -170,7 +190,6 @@ ul {
   background: #ee8600; 
   color: white;
   border-radius: 4px;
-  font-family: "Roboto Condensed",Roboto,Helvetica,sans-serif;
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;

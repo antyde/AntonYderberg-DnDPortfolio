@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/Styling.css">
+    <script defer src="/JavaScript/JavaSript.js"></script>
     <title>Anton Yderberg, DnD player</title>
 </head>
 
@@ -17,7 +18,7 @@
         <!-- two lists withing one list, one for my dungeon master stuff, one for my player stuff -->
         <ul id="navbar">
             <!-- Things that have to to do with me leading (Campaigns and expierience) should be purple with black text-->
-            <li id="DmNav">
+           <!-- <li id="DmNav">
                 DungeonMaster
                 <ul>
                     <li class="nav-item">
@@ -25,7 +26,7 @@
                     </li>
                     <li class="nav-item">Campaigns</li>
                 </ul>
-            </li>
+            </li> -->
 
             <!-- things that have to do with me playing (charachters and experience) Should be orange with white text-->
             <li id="playernav">
@@ -52,27 +53,21 @@
         </ul>
     </nav>
 
-    <div class="dm-side">
-
-
-    </div>
-
-    <div class="player-side">
-
-        <!-- Template för kort -->
-        <div id="bob-card">
-            <a href="/bob-info.html" class="player-side-link">
-                <div id="bob-background"></div>
+    <!-- <div class="dm-side">
+        
+        <div class="card" >
+            <a href="/school-game-info.html" class="dm-side-link">
+                <div id="school-game-background" class="card-background"></div>
                 <div class="card-body">
                     <div class="card-header">
-                        <img src="/content/Brass knuckle.jpg" alt="Cutter icon" class="card-icon">
+                        <img src="content/Brass knuckle.jpg" alt="Cutter icon" class="card-icon">
                         <div class="card-main-header">
                             <h2 class="charachter-name">Elias "Bob" Flinch</h2>
-                            <p class="class">Cutter</p>
+                            <p class="class">Ruthles Cutter</p>
                         </div>
                     </div>
                     <div class="card-description">
-                        <p> <span class="topic">Description:</span> Short description of BoB</p>
+                        <p> <span class="topic">Description:</span> Short description of Bob</p>
                         <p> <span class="topic">Stats:</span> Short description of bobs stats</p>
                     </div>
                 </div>
@@ -82,14 +77,111 @@
             </a>
         </div>
 
-    </div>
+    </div> -->
+
+
+        <!-- Template för kort -->
+
+        <div class="spliting-container">
+        <div class="card" id="bob-card">
+            <a href="/bob-info.html" class="player-side-link">
+                <div id="bob-background" class="card-background"></div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <img src="content/Brass knuckle.jpg" alt="Cutter icon" class="card-icon">
+                        <div class="card-main-header">
+                            <h2 class="charachter-name">Elias "Bob" Flinch</h2>
+                            <p class="class">Ruthles Cutter</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p> <span class="topic">Description:</span> Short description of Bob</p>
+                        <p> <span class="topic">Stats:</span> Short description of bobs stats</p>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <span class="button-text">Show Bob</span>
+                </div>
+            </a>
+        </div>
+        
+
+
+        <div class="card" id="rún-card">
+            <a href="/rún-info.html" class="player-side-link">
+                <div id="rún-background" class="card-background"></div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <img src="content/Reaper.png" alt="Barbarian icon" class="card-icon">
+                        <div class="card-main-header">
+                            <h2 class="charachter-name">Rún Vol'din</h2>
+                            <p class="class">Undead Barbarian</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p> <span class="topic">Description:</span> Short description of Rún</p>
+                        <p> <span class="topic">Stats:</span> Short description of Rúns stats</p>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <span class="button-text">Show Rún</span>
+                </div>
+            </a>
+        </div>
+</div>
+        <div class="spliting-container">
+        <div class="card" id="aias-card">
+            <a href="/aias-info.html" class="player-side-link">
+                <div id="aias-background" class="card-background"></div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <img src="content/Star.png" alt="Star icon" class="card-icon">
+                        <div class="card-main-header">
+                            <h2 class="charachter-name">Aias Miafaren</h2>
+                            <p class="class">Starstruck Warlock</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p> <span class="topic">Description:</span> Short description of Aias</p>
+                        <p> <span class="topic">Stats:</span> Short description of Aias stats</p>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <span class="button-text">Show Aias</span>
+                </div>
+            </a>
+        </div>
+        
+        
+        <div class="card" id="george-card">
+            <a href="/george-info.html" class="player-side-link">
+                <div id="george-background" class="card-background"></div>
+                <div class="card-body">
+                    <div class="card-header">
+                        <img src="content/Mask.png" alt="Mask icon" class="card-icon">
+                        <div class="card-main-header">
+                            <h2 class="charachter-name">George Shore</h2>
+                            <p class="class">Daring Slide</p>
+                        </div>
+                    </div>
+                    <div class="card-description">
+                        <p> <span class="topic">Description:</span> Short description of George</p>
+                        <p> <span class="topic">Stats:</span> Short description of Georges stats</p>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <span class="button-text">Show George</span>
+                </div>
+            </a>
+        </div>
+</div>
 
     <footer>
-        <div class="dm-side">
+       <!-- <div class="dm-side">
             <div id="sources">These are my sources</div>
             <a class="dm-side-link" href="#">Get yo ass up again</a>
 
-        </div>
+        </div> -->
         <div class="player-side">
             <div id="basic-info">Adress, my age some random stuff</div>
             <div id="contact-me">please, dont contact me on these social medias</div>

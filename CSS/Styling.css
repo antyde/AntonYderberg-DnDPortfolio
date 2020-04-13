@@ -35,6 +35,7 @@ nav {
   height: 3rem;
   width: 100%;
   background-color: grey;
+  margin-bottom: 1em;
 }
 
 ul {
@@ -246,7 +247,10 @@ footer {
   color: white;
 }
 
-
+#standard-copyright
+{
+  padding-bottom: 0.5em;
+}
 
 #copyright-stuff 
 {

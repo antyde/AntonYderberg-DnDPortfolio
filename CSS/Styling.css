@@ -24,7 +24,8 @@ header {
 
 #nav-header {
   text-decoration: none;
-  padding-left: 1em;  
+  padding-left: 1em;
+  padding-top: 0.4em;
   border-left: solid black 1px;
   border-right: solid black 1px;
 }
@@ -304,7 +305,7 @@ footer {
 
 /* Media querrys */
 
-@media (max-width: 1026px){
+@media (max-width: 1023px){
 
   body 
   {
@@ -336,7 +337,7 @@ footer {
 
 }
 
-@media (max-width: 701px)
+@media (max-width: 1324px)
 {
 
   .card-button {

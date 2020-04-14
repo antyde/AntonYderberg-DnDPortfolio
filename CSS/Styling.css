@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: auto auto auto 1fr 1fr auto;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 
 header {
@@ -257,6 +257,7 @@ ul {
   bottom: -20px;
   z-index: 1;
   left: 55%;
+  border: solid black 1px;
 }
 
 .card-button:hover{
@@ -343,7 +344,7 @@ footer {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: auto auto 1fr 1fr 1fr auto;
+    grid-template-rows: auto auto auto auto auto auto;
   }
 
   .spliting-container
@@ -396,7 +397,7 @@ footer {
 {
   #aboutMe {
     display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: auto;
     margin-left: 15%;
     margin-right: 15%;
@@ -413,4 +414,27 @@ footer {
     grid-column: 1;
     text-align: center;
   }
+}
+
+@media (max-width: 560px)
+{
+  .dropdown {
+    position: absolute;
+    width: 10rem;
+    opacity: 0;
+    z-index: 3;
+    background: orange;
+  
+    border-radius: 0 0 8px 8px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    transition: opacity 0.15s ease-out;
+  }
+ 
+
 }

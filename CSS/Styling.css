@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: auto auto 1fr 1fr auto;
+  grid-template-rows: auto auto auto 1fr 1fr auto;
 }
 
 header {
@@ -87,17 +87,20 @@ ul {
 
 /* General color scheme for the two sides */
 /*
-.dm-side {
-  background-color: purple;
-  color: white;
-  grid-column: 1;
-} 
 
 #DmNav {
   background-color: purple;
   color: white;
   width: 100%;
 }
+
+.dm-side {
+  background-color: purple;
+  color: white;
+  grid-column: 1;
+} 
+
+
 
 .dm-side-link {
   text-decoration: none;
@@ -115,14 +118,42 @@ ul {
   color: black;
 }
 
+/* About me */
 
+#aboutMe {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 15%;
+  margin-right: 15%;
+  grid-gap: 1em;
+  padding: 1em;
+  border: 1px solid orange;
+  margin-bottom: 2em;
+}
+
+#aboutMe-header{
+  padding: 0;
+  margin: 0;
+  grid-column: 1/3;
+  grid-row: 1;
+  text-align: center;
+}
+
+.aboutMe-topics {
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+
+
+
+/* Cards */
 
 .spliting-container{
   display:grid;
   grid-template-columns: 1fr 1fr;
 }
-
-/* Cards */
 
 .card {
   position: relative;
@@ -137,27 +168,27 @@ ul {
 
 
 #bob-background {
-  background-image: url(/content/Bob.png);
+  background-image: url(../content/Bob.png);
 }
 
 #rún-background {
-  background-image: url(/content/Rún.jpg);
+  background-image: url(../content/Rún.jpg);
 }
 
 #aias-background {
-  background-image: url(/content/Aias.jpg);
+  background-image: url(../content/Aias.jpg);
 }
 
 #george-background{
-  background-image: url(/content/George.png);
+  background-image: url(../content/George.png);
 }
 
 #alie-background{
-  background-image: url(/content/Alie.png);
+  background-image: url(../content/Alie.png);
 }
 
 #thelar-background{
-  background-image: url(/content/Thelar.png);
+  background-image: url(../content/Thelar.png);
 }
 
 .card-background {
@@ -329,7 +360,7 @@ footer {
     padding: 15px 15px 35px;
     margin-bottom: 60px;
     height: auto;
-    width: 70%;
+    width: auto;
     margin-left: 15%;
     margin-right: 15%;
     background-color: #ff7f27;
@@ -359,4 +390,27 @@ footer {
     transform: translateX(-50%);
   }
 
+}
+
+@media (max-width: 768px)
+{
+  #aboutMe {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-gap: 1em;
+    padding: 1em;
+    border: 1px solid orange;
+    margin-bottom: 2em;
+  }
+  
+  #aboutMe-header{
+    padding: 0;
+    margin: 0;
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+  }
 }
